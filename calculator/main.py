@@ -13,7 +13,7 @@ def main():
         print('Example: python main.py "3 + 5"')
         return
 
-    expression = " ".join(sys.argv[1:])
+    expression = sys.argv[1]  # Take the whole expression as a single argument
     try:
         result = calculator.evaluate(expression)
         if result is not None:
