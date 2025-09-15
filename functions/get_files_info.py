@@ -1,4 +1,6 @@
 import os
+from google.genai import types
+
 
 def get_files_info(working_directory, directory="."):
 
@@ -32,6 +34,7 @@ def get_files_info(working_directory, directory="."):
         return "\n".join(result_lines)
     except Exception as e:
         return f"Error: {str(e)}"
+
 
 if __name__ == "__main__":
     get_files_info('.')

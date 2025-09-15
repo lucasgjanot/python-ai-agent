@@ -1,4 +1,5 @@
 from functions.run_python_file import run_python_file
+from functions.write_file import write_file
 
 def run_tests():
     print(run_python_file("calculator", "main.py"))
